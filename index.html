@@ -10,7 +10,7 @@
 
 <body>
 	<div class="badge">
-		Buy List
+		<span1>BuyList</span1>
 		<span>Робота Панасюк Софії</span>
 	</div>
 	<div class="box">
@@ -23,8 +23,10 @@
 
 			<div class="product">
 				<span class="product-name"><s>Помідори</s></span>
-				<div class="quantity-controls-for-tomatoes">
-					<span class="quantity">2</span>
+				<div class="quantity-controls">
+					<button class="decrease" data-tooltip="Зменшити кількість" style="visibility: hidden;">-</button>
+					<span class="quantity"><span>2</span></span>
+					<button class="increase" data-tooltip="Збільшити кількість" style="visibility: hidden;">+</button>
 				</div>
 				<div class="buttons-box">
 					<button class="status not-bought" data-tooltip="Не куплено">Не куплено</button>
@@ -35,7 +37,7 @@
 				<span class="product-name">Печиво</span>
 				<div class="quantity-controls">
 					<button class="decrease" data-tooltip="Зменшити кількість">-</button>
-					<span class="quantity">2</span>
+					<span class="quantity"><span>2</span></span>
 					<button class="increase" data-tooltip="Збільшити кількість">+</button>
 				</div>
 				<div class="buttons-box">
@@ -48,7 +50,7 @@
 				<input type="text" class="product-name-input" placeholder="Сир">
 				<div class="quantity-controls">
 					<button class="decrease" data-tooltip="Зменшити кількість">-</button>
-					<span class="quantity">1</span>
+					<span class="quantity"><span>1</span></span>
 					<button class="increase" data-tooltip="Збільшити кількість">+</button>
 				</div>
 				<div class="buttons-box">
@@ -84,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 </body>
