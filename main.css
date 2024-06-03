@@ -146,7 +146,6 @@ body {
     display: grid;
     grid-template-columns: 150px 1fr auto;
     align-items: center;
-    /* This will vertically center all items in the grid */
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
@@ -160,20 +159,16 @@ body {
 
 .product-name {
     margin-right: 10px;
-    /* Maintains some spacing */
     white-space: nowrap;
-    /* Ensures the text does not wrap */
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 
 .quantity-controls {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 90px;
-    /* Keeps size consistent */
 }
 
 .decrease {
@@ -207,13 +202,14 @@ body {
     font-size: smaller;
 }
 
-
 .buttons-box {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-
+.status{
+    width: 90px;
+}
 .status,
 .remove {
     background-color: #e3e3e3;
@@ -224,7 +220,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .remove {
     background-color: red;
     color: white;
@@ -240,12 +235,17 @@ body {
     padding: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
 
-    .left-box,
-    .sidebox {
-        flex: 1 1 100%;
+    .left-box {
         margin-right: 0;
+    }
+
+    .sidebox {
+        margin-top: 20px; 
     }
 }
 
